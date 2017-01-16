@@ -22,7 +22,7 @@ end
 
     res.push inp
     res_need.push inp_need
-    resurses[j][1] = resurses[j][1]-inp
+    resurses[j][1] = resurses[j][1]-inp #free
   end
   res_push = [res, res_need] # 0 - alloc;  1 - neccer
   processes[i] = res_push
@@ -60,7 +60,7 @@ while (not_check) do
   end
   not_check = false if count_safe_in_while == 0
 end
-puts "Система безопасна" if count_processes = safe
+puts "Система безопасна" if count_processes == safe
 #puts count_processes
 #puts safe
 

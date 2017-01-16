@@ -1,10 +1,54 @@
 <html>
 <head>
   <title>Алгоритм банкира</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-<p>
-  Приложение запущено
-</p>
+
+<div class="container-narrow">
+
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Главная</a></li>
+
+    </ul>
+    <h3 class="muted">Пятницкий Семен</h3>
+  </div>
+
+
+  <div class="jumbotron">
+
+    <h1>Алгоритм банкира</h1>
+    <p class="lead">Реализация: Ruby, Sinatra, ERB</p>
+    <a data-toggle="collapse" data-target="#start" class="btn btn-large btn-success" href="#">Начать</a>
+  </div>
+
+  <div id="start" class="collapse">
+    <form method="post" action="/generate">
+      <div class="form-group">
+        <label>Число процессов</label>
+        <input name="process" type="text" class="form-control" placeholder="Процессы">
+      </div>
+      <div class="form-group">
+        <label>Число ресурсов</label>
+        <input name="resurs" type="text" class="form-control"  placeholder="Ресурсы">
+      </div>
+      <button type="submit" class="btn btn-default">Генерация формы</button>
+    </form>
+
+  <hr>
+
+  <div class="footer">
+    <p>Пятницкий С.К. 2017</p>
+  </div>
+
+</div> <!-- /container -->
+
+</div>
 </body>
+
 </html>
